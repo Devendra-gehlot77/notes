@@ -105,7 +105,7 @@ export default function ComputerChapters() {
             {
               cls: "11th",
               chapter: "Chapter 1 - Introduction to Computers",
-              link: "/notes/class11/ch1",
+              link: "/computer/chapters/ch-one",
             },
             {
               cls: "11th",
