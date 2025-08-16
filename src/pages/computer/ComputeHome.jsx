@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function ComputeHome() {
   return (
     <>
@@ -26,12 +28,12 @@ export default function ComputeHome() {
         <td className="px-6 py-4 font-medium">11th</td>
         <td className="px-6 py-4">Computer Science</td>
         <td className="px-6 py-4">
-          <a
+          <Link
             href="/computer/chapters"
             className="text-blue-600 font-medium hover:underline transition duration-300 hover:text-blue-800"
           >
             View Notes →
-          </a>
+          </Link>
         </td>
       </tr>
 
@@ -62,12 +64,12 @@ export default function ComputeHome() {
                 Class 11 - Introduction to Computers
               </h3>
               <p className="text-gray-600">Subject: Computer Science</p>
-              <a
-                href="/notes/class11/introduction"
+              <Link 
+               href="/computer/chapters"
                 className="text-blue-600 font-medium hover:underline"
               >
                 View Notes →
-              </a>
+              </Link>
             </div>
 
             {/* 12th DBMS */}
