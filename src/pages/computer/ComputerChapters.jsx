@@ -19,64 +19,54 @@ export default function ComputerChapters() {
               {[
                 {
                   cls: "11th",
-                  chapter: "Chapter 1 - Introduction to Computers",
+                  chapter: "Chapter 1 - Computer System",
                   link: "/computer/chapters/ch-one",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 2 - Python Basics",
-                  link: "/notes/class11/ch2",
+                  link: "/computer/chapters/ch-two",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 3 - Data Representation",
-                  link: "/notes/class11/ch3",
+                  link: "/computer/chapters/ch-three",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 4 - Control Structures",
-                  link: "/notes/class11/ch4",
+                  link: "/computer/chapters/ch-four",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 5 - Functions in Python",
-                  link: "/notes/class11/ch5",
+                  link: "/computer/chapters/ch-five",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 6 - File Handling",
-                  link: "/notes/class11/ch6",
+                 link: "/computer/chapters/ch-six",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 7 - Database Management System (DBMS)",
-                  link: "/notes/class12/ch7",
+                  link: "/computer/chapters/ch-seven",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 8 - SQL Queries",
-                  link: "/notes/class12/ch8",
+                link: "/computer/chapters/ch-eight",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 9 - Object-Oriented Programming (OOPs)",
-                  link: "/notes/class12/ch9",
+                  link: "/computer/chapters/ch-nine",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 10 - Networking & Internet",
-                  link: "/notes/class12/ch10",
-                },
-                {
-                  cls: "11th",
-                  chapter: "Chapter 11 - Boolean Algebra",
-                  link: "/notes/class12/ch11",
-                },
-                {
-                  cls: "11th",
-                  chapter: "Chapter 12 - Emerging Trends in IT",
-                  link: "/notes/class12/ch12",
-                },
+                  link: "/computer/chapters/ch-ten",
+                }
               ].map((row, i) => (
                 <tr
                   key={i}
