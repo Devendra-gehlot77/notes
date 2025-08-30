@@ -105,12 +105,12 @@ export default function ComputerChapters() {
             {
               cls: "11th",
               chapter: "Chapter 3 - Data Representation",
-              link: "/notes/class11/ch3",
+              link: "/computer/chapters/ch-three",
             },
             {
               cls: "11th",
-              chapter: "Chapter 4 - Control Structures",
-              link: "/notes/class11/ch4",
+              chapter: "Chapter 4 - Chapter 4 - Introdcution to problem solving",
+              link: "/computer/chapters/ch-four",
             },
             {
               cls: "11th",
