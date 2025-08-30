@@ -109,48 +109,38 @@ export default function ComputerChapters() {
             },
             {
               cls: "11th",
-              chapter: "Chapter 4 - Chapter 4 - Introdcution to problem solving",
+              chapter: "Chapter 4 - Introdcution to problem solving",
               link: "/computer/chapters/ch-four",
             },
             {
               cls: "11th",
               chapter: "Chapter 5 - Functions in Python",
-              link: "/notes/class11/ch5",
+              link: "/computer/chapters/ch-five",
             },
             {
               cls: "11th",
               chapter: "Chapter 6 - File Handling",
-              link: "/notes/class11/ch6",
+              link: "/computer/chapters/ch-six",
             },
             {
               cls: "12th",
               chapter: "Chapter 7 - Database Management System (DBMS)",
-              link: "/notes/class12/ch7",
+              link: "/computer/chapters/ch-seven",
             },
             {
               cls: "12th",
               chapter: "Chapter 8 - SQL Queries",
-              link: "/notes/class12/ch8",
+              link: "/computer/chapters/ch-eight",
             },
             {
               cls: "12th",
               chapter: "Chapter 9 - Object-Oriented Programming (OOPs)",
-              link: "/notes/class12/ch9",
+              link: "/computer/chapters/ch-nine",
             },
             {
               cls: "12th",
               chapter: "Chapter 10 - Networking & Internet",
-              link: "/notes/class12/ch10",
-            },
-            {
-              cls: "12th",
-              chapter: "Chapter 11 - Boolean Algebra",
-              link: "/notes/class12/ch11",
-            },
-            {
-              cls: "12th",
-              chapter: "Chapter 12 - Emerging Trends in IT",
-              link: "/notes/class12/ch12",
+              link: "/computer/chapters/ch-ten",
             },
           ].map((row, i) => (
             <div
