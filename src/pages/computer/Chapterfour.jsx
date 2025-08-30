@@ -67,6 +67,44 @@ export default function Chapterfour() {
       content: "It desired by the user .  ",
     },
   ];
+  const flowControl = [
+    {
+      heading: "Sequence =",
+      content:
+        "When the statement in an algorithm are executed one after another are said to be execute in sequence . ",
+    },
+    {
+      heading: "Selection =",
+      content:
+        "In algorithm there are some two or more than two. There are some option and user need to one option to be executed . This process is called selelction  . ",
+    },
+    {
+      heading: "Repetition =",
+      content:
+        " Execution of some statement in an algorithm are repeated till some specified condition . This process is called repetition . ",
+    },
+  ];
+  const timeComplexity = [
+    {
+      heading: "Time complexity = ",
+      content:
+        "A program need a processing time to execute is called time complexity .",
+    },
+    {
+      heading: "Space Complexity = ",
+      content: " A program need a memory to store is called space complexity.",
+    },
+    {
+      heading: "Coding =  ",
+      content:
+        "When the algorithm is written in a high level language it process is callled coding . Every programming langugae follows some set of instructinos that is called syntax . ",
+    },
+    {
+      heading: "Decomposition = ",
+      content:
+        "When the program is very complexity users need to decompose it into smaller parts. To breakdown the program into a small parts is called decomoposition  . ",
+    },
+  ];
   return (
     <>
       <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-10">
@@ -82,9 +120,6 @@ export default function Chapterfour() {
             Chapter 4: Introduction to problem Solving
           </h1>
           {/* steps for problem solving   */}
-          <p className="text-gray-700 mt-2 font-bold text-base md:text-lg leading-relaxed mb-4">
-            Steps for the problem for solving
-          </p>
           {problemSolvingData.map((v, i) => {
             return (
               <motion.ul
@@ -104,27 +139,29 @@ export default function Chapterfour() {
             );
           })}
           {/* features of an algorithm  */}
-          <p className="text-gray-700 mt-2 font-bold text-base md:text-lg leading-relaxed mb-4">
-            Characterstics (Features) of algorithm
-          </p>
-          {featuresAlgorithm.map((v, i) => {
-            return (
-              <motion.ul
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-                className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-              >
-                <li>
-                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                    {" "}
-                    {v.heading}
-                  </span>
-                  {v.content}
-                </li>
-              </motion.ul>
-            );
-          })}
+          <div>
+            <p className="text-gray-700 mt-2 font-bold text-base md:text-lg leading-relaxed mb-4">
+              Characterstics (Features) of algorithm
+            </p>
+            {featuresAlgorithm.map((v, i) => {
+              return (
+                <motion.ul
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.5, duration: 0.8 }}
+                  className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+                >
+                  <li>
+                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                      {" "}
+                      {v.heading}
+                    </span>
+                    {v.content}
+                  </li>
+                </motion.ul>
+              );
+            })}
+          </div>
           {/* components of algorithm  */}
           <p className="text-gray-700 mt-2 font-bold text-base md:text-lg leading-relaxed mb-4">
             Components of algorithm (element of algorithm )
@@ -156,12 +193,12 @@ export default function Chapterfour() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+              className="list-disc-none  pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
               <li>
                 <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
                   {" "}
-                  Flowchart ={" "}
+                  1. Flowchart ={" "}
                 </span>
                 It is a visual representation of an algorithm and it is made up
                 of diagrams like boxes, diamonds and other shapes.
@@ -243,6 +280,119 @@ export default function Chapterfour() {
                   </div>
                 </div>
               </li>
+              <ul>
+                <li>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    2. Pseudocode ={" "}
+                  </span>
+                  It is a detailed description of instruction that a computer
+                  must follow in a particular roder .
+                </li>
+              </ul>
+              <ul className="list-disc  pl-6 space-y-2 text-gray-700 text-base md:text-lg">
+                <li> It is known as non-formal language </li>
+                <li>There are some terms (keywords) used in a pseudocode </li>
+                <p> INPUT </p>
+                <p>COMPUTE</p>
+                <p> PRINT </p>
+                <p> INCREMENT </p>
+                <p> DECREMENT </p>
+                <p>IF / ELSE</p>
+                <p> WHILE </p>
+                <p>TRUE / FALSE </p>
+              </ul>
+              <li>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  example = Sum of two numbers{" "}
+                </span>
+                <li>INPUT : a , b </li>
+                <li> COMPUTE : c = a + b</li>
+                <li>PRINT : C</li>
+              </li>
+            </motion.ul>
+          </div>
+          {/*  FLow of control  */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Flow of control
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              <li>
+                An algorithm where all the steps are executed in a specific
+                order . THis process is called as flow of control .{" "}
+              </li>
+              <li>There are three method for flow of control .</li>
+              <motion.ul
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+              >
+                {flowControl.map((v, i) => {
+                  return (
+                    <>
+                      <li>
+                        <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                          {" "}
+                          {v.heading}
+                        </span>
+                        {v.content}
+                      </li>
+                    </>
+                  );
+                })}
+              </motion.ul>
+            </motion.ul>
+          </div>
+          {/* verifying algorithm  */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Comparison of an algorithm
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className=" pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              <li>
+                {" "}
+                There are many method to solve and any problem so user need this
+                method to be compared and an analyse on the basis of amount of
+                processing time and memory to execute them{" "}
+              </li>
+            </motion.ul>
+          </div>
+          {/* time complaxity  */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              These terms are called time and space complexity
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className=" list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              {timeComplexity.map((v, i) => {
+                return (
+                  <>
+                    <li>
+                      <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                        {v.heading}
+                      </span>
+                      {v.content}
+                    </li>
+                  </>
+                );
+              })}
             </motion.ul>
           </div>
           {/* ASCII
