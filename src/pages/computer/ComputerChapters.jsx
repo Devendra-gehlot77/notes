@@ -24,7 +24,7 @@ export default function ComputerChapters() {
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 2 - Python Basics",
+                  chapter: "Chapter 2 - Encoding Schemes and Number System ",
                   link: "/computer/chapters/ch-two",
                 },
                 {
@@ -34,7 +34,7 @@ export default function ComputerChapters() {
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 4 - Control Structures",
+                  chapter: "Chapter 4 - Introdcution to problem solving ",
                   link: "/computer/chapters/ch-four",
                 },
                 {
@@ -45,7 +45,7 @@ export default function ComputerChapters() {
                 {
                   cls: "11th",
                   chapter: "Chapter 6 - File Handling",
-                 link: "/computer/chapters/ch-six",
+                  link: "/computer/chapters/ch-six",
                 },
                 {
                   cls: "11th",
@@ -55,7 +55,7 @@ export default function ComputerChapters() {
                 {
                   cls: "11th",
                   chapter: "Chapter 8 - SQL Queries",
-                link: "/computer/chapters/ch-eight",
+                  link: "/computer/chapters/ch-eight",
                 },
                 {
                   cls: "11th",
@@ -66,7 +66,7 @@ export default function ComputerChapters() {
                   cls: "11th",
                   chapter: "Chapter 10 - Networking & Internet",
                   link: "/computer/chapters/ch-ten",
-                }
+                },
               ].map((row, i) => (
                 <tr
                   key={i}
@@ -94,13 +94,13 @@ export default function ComputerChapters() {
           {[
             {
               cls: "11th",
-              chapter: "Chapter 1 - Introduction to Computers",
+              chapter: "Chapter 1 - Computer System",
               link: "/computer/chapters/ch-one",
             },
             {
               cls: "11th",
-              chapter: "Chapter 2 - Python Basics",
-              link: "/notes/class11/ch2",
+              chapter: "Chapter 2 - Encoding Schemes and Number System",
+              link: "/computer/chapters/ch-two",
             },
             {
               cls: "11th",
