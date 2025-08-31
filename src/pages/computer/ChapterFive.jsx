@@ -83,6 +83,7 @@ export default function ChapterFive() {
         'This mode is used to right multiple lines of programs . The file have to be saved with the ".py" extension before the execute (run of program ) . ',
     },
   ];
+
   const setsnone = [
     {
       heading: " set",
@@ -97,6 +98,7 @@ export default function ChapterFive() {
       ex: " a = none  ",
     },
   ];
+
   const dataMuteImmuteOp = [
     {
       heading: " Mutable data types ",
@@ -117,6 +119,287 @@ export default function ChapterFive() {
       ex: "Arithmetic Operations , Assignment Operations , Comparison Operations ,  Logical Operations ,  Membership Operations ",
     },
   ];
+
+  const arithemetic = [
+    {
+      operator: "+ (Addition)",
+      description: "Add two values",
+      example: `a = 10
+b = 20
+c = a + b
+>>> 30`,
+    },
+    {
+      operator: "- (Subtraction)",
+      description: "Subtracts two values",
+      example: `a = 10
+b = 5
+c = a - b
+>>> 5`,
+    },
+    {
+      operator: "× (Multiplication)",
+      description: "Multiplies two values",
+      example: `a = 10
+b = 5
+c = a * b
+>>> 50`,
+    },
+    {
+      operator: "/ (Division)",
+      description: "Division of two values",
+      example: `a = 10
+b = 5
+c = a / b
+>>> 2`,
+    },
+    {
+      operator: "% (Modulus)",
+      description: "Find the remainder",
+      example: `a = 10
+b = 3
+c = a % b
+>>> 1`,
+    },
+    {
+      operator: "// (Floor Division )",
+      description: "Divide two values and display only integer part . ",
+      example: `a = 10
+b = 3
+c = a ||  b
+>>> 1`,
+    },
+    {
+      operator: "** (Exponent )",
+      description: "Calculate power calculation",
+      example: `a = 2
+b = a ** b3
+>>> 1`,
+    },
+  ];
+
+  const relational = [
+    {
+      operator: "==  (Equal)",
+      description:
+        "It compares two value if , condition is true displa true otherwise false . ",
+      example: `10 == 10 
+      >>> true 
+      10 == 13 
+      >>> False `,
+    },
+    {
+      operator: "!= (not equal to )",
+      description:
+        "Compare two value and condition is true then display true otherwise false . ",
+      example: ` 10 != 10
+        false
+        10 != 12
+        false `,
+    },
+    {
+      operator: " > (Greater than)",
+      description:
+        "If the first value greater than second value then result will be true otherwise false . ",
+      example: ` 13 > 10 
+      true`,
+    },
+    {
+      operator: "< (Less than)",
+      description:
+        "If the first value is less than the second value result will be true otherwise false . ",
+      example: `10 < 10
+        False 
+        `,
+    },
+    {
+      operator: "<=  (Greater than or equal to )",
+      description:
+        "If the first value is greater or equal to the second value then result will be true otherwise false ",
+      example: ` 10 >= 13 
+        True 
+        10 >= 9 
+        false `,
+    },
+    {
+      operator: " <= (less than or equal to ) ",
+      description:
+        "If the first value is smaller or equal to the second value then reslut will be true otherwise False  . ",
+      example: `15 <= 10
+          false
+          `,
+    },
+  ];
+  const logical = [
+    {
+      operator: "and",
+      description:
+        "IF the both cnditno are true then result will be true otherwise false  ` . ",
+      example: `10 > 5 and 5 < 15 
+      >>> True
+      10 > 5 and 5 < 3 
+      >>> False  `,
+    },
+    {
+      operator: "or ",
+      description:
+        "If any of two conditon is true then result will be true otherwise false . ",
+      example: ` 10 > 5 or 5 < 3
+      >>> True `,
+    },
+    {
+      operator: "not ",
+      description: "It is used to reverse the result of condtin . ",
+      example: ` not (10 > 5 )
+       >>> False`,
+    },
+  ];
+
+  const assignment = [
+    {
+      operator: "=",
+      example: `a = 10 `,
+    },
+    {
+      operator: " +=  ",
+      example: ` a = a + b
+      a += b  `,
+    },
+    {
+      operator: " -= ",
+      example: `  a = a-b 
+      a -= b `,
+    },
+    {
+      operator: " *= ",
+      example: `  a = a*b 
+      a *= b `,
+    },
+  ];
+
+  const identify = [
+    {
+      operator: "is ",
+      description:
+        " If the type of variable or either side of the operator has the same type then result will be true otherwise False . ",
+      example: `a = 5 
+      >>> Type (a) is int
+      true 
+      >>> Type (a) is float 
+      False`,
+    },
+    {
+      operator: " is not ",
+      description:
+        "The tpe of variable or either side of the operator does not have same type then result will be true otherwise false . ",
+      example: ` a = 5 
+      >>> Type (a) is not  int
+      False  
+      >>> Type (a) is not float 
+      True`,
+    },
+  ];
+
+  const membership = [
+    {
+      operator: "in ",
+      description:
+        " If the value is found in the given list then result will be true other wise false . ",
+      example: `a = [1 ,2 , 3 , 4 ]
+      >>> 2 in a 
+      True
+      >>> 5 in a 
+      False `,
+    },
+    {
+      operator: "  not in  ",
+      description:
+        "If the value is not found in the given list then answer will be true otherwise false   . ",
+      example: `a = [1 ,2 , 3 , 4 ]
+      >>> 2 not  in a 
+      False
+      >>> 5 not  in a 
+      True`,
+    },
+  ];
+
+  const precedence = [
+    {
+      order: "1",
+      operator: " * * ",
+      discription: ` Exponentiation (raise to the power) `,
+    },
+    {
+      order: "2",
+      operator: " ~ + ~  ",
+      discription: ` Complement , unary plus and unary minus .  `,
+    },
+    {
+      order: "3",
+      operator: " * / % //  ",
+      discription: `Multiply , Divide , modulo , and floor division `,
+    },
+    {
+      order: "4",
+      operator: " + ,  - ",
+      discription: `Addition and Subtraction `,
+    },
+    {
+      order: "5",
+      operator: " <= , < , > , >= , == , !=  ",
+      discription: `Rlational and Comparison operators .  `,
+    },
+    {
+      order: "6",
+      operator: " = , % , |= , ||= , -= , += , *= , **  ",
+      discription: `Assignment operators `,
+    },
+    {
+      order: "7",
+      operator: " is , is not  ",
+      discription: ` Identity operator  `,
+    },
+    {
+      order: "8",
+      operator: " in , not in  ",
+      discription: `Membership operator  `,
+    },
+    {
+      order: "9",
+      operator: " not  ",
+      discription: `Logical operator  `,
+    },
+    {
+      order: "10",
+      operator: " and   ",
+      discription: `Logical operator  `,
+    },
+
+    {
+      order: "11",
+      operator: " or  ",
+      discription: `Logical operator  `,
+    },
+  ];
+
+  const error = [
+    {
+      heading: "Syntax error ",
+      content:
+        "When a program does not follow the rule of programming language then interpreter generate the syntax error . ",
+    },
+    {
+      heading: "Logical  error ",
+      content:
+        " When the program generate undesired uputut or terminate the execution abnoramlly then the logical error generated  ",
+    },
+    {
+      heading: " Runtime error ",
+      content:
+        " When the statement of the program is correct but interpreter cannot execute then this error are called runtime error  ",
+    },
+  ];
+
   return (
     <>
       <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-10">
@@ -640,148 +923,491 @@ export default function ChapterFive() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  1. Arithmetic Operator ={" "}
-                </span>
-                Arithemetic operators are used to perform only arithmetic
-                operations .
-              </p>
+              {/*  arethiemic operator  */}
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    1. Arithmetic Operator ={" "}
+                  </span>
+                  Arithemetic operators are used to perform only arithmetic
+                  operations .
+                </p>
+                <div className="flex items-center justify-center p-6">
+                  <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+                    <h1 className="text-xl font-bold text-center mb-6">
+                      Arithmetic Operators in Python
+                    </h1>
+
+                    <table className="table-auto border border-gray-300 w-full">
+                      <thead className="bg-gray-200">
+                        <tr>
+                          <th className="border px-4 py-2 text-left">
+                            Operator
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Description
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Example
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {arithemetic.map((item, index) => (
+                          <tr key={index} className="hover:bg-gray-50">
+                            <td className="border px-4 py-2 font-medium">
+                              {item.operator}
+                            </td>
+                            <td className="border px-4 py-2">
+                              {item.description}
+                            </td>
+                            <td className="border px-4 py-2 whitespace-pre-line font-mono text-sm">
+                              {item.example}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              {/* Relational operator  */}
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    2. Relational Operator ={" "}
+                  </span>
+                  These operators are used to compare the value of the operands
+                  (variable)
+                </p>
+                <div className="flex items-center justify-center p-6">
+                  <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+                    <h1 className="text-xl font-bold text-center mb-6">
+                      Relational Operators in Python
+                    </h1>
+
+                    <table className="table-auto border border-gray-300 w-full">
+                      <thead className="bg-gray-200">
+                        <tr>
+                          <th className="border px-4 py-2 text-left">
+                            Operator
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Description
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Example
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {relational.map((item, index) => (
+                          <tr key={index} className="hover:bg-gray-50">
+                            <td className="border px-4 py-2 font-medium">
+                              {item.operator}
+                            </td>
+                            <td className="border px-4 py-2">
+                              {item.description}
+                            </td>
+                            <td className="border px-4 py-2 whitespace-pre-line font-mono text-sm">
+                              {item.example}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              {/* Logicla  operator  */}
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    3. Logical Operator ={" "}
+                  </span>
+                  These operators are also use to compare to relatinal condition
+                  .
+                </p>
+                <div className="flex items-center justify-center p-6">
+                  <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+                    <h1 className="text-xl font-bold text-center mb-6">
+                      Logical Operators in Python
+                    </h1>
+
+                    <table className="table-auto border border-gray-300 w-full">
+                      <thead className="bg-gray-200">
+                        <tr>
+                          <th className="border px-4 py-2 text-left">
+                            Operator
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Description
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Example
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {logical.map((item, index) => (
+                          <tr key={index} className="hover:bg-gray-50">
+                            <td className="border px-4 py-2 font-medium">
+                              {item.operator}
+                            </td>
+                            <td className="border px-4 py-2">
+                              {item.description}
+                            </td>
+                            <td className="border px-4 py-2 whitespace-pre-line font-mono text-sm">
+                              {item.example}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              {/* Assigment   operator  */}
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    4. Assignment Operator ={" "}
+                  </span>
+                  These operators are also use to compare to relatinal condition
+                  .
+                </p>
+                <div className="flex items-center justify-center p-6">
+                  <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+                    <h1 className="text-xl font-bold text-center mb-6">
+                      Assigment Operators in Python
+                    </h1>
+
+                    <table className="table-auto border border-gray-300 w-full">
+                      <thead className="bg-gray-200">
+                        <tr>
+                          <th className="border px-4 py-2 text-left">
+                            Operator
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Example
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {assignment.map((item, index) => (
+                          <tr key={index} className="hover:bg-gray-50">
+                            <td className="border px-4 py-2 font-medium">
+                              {item.operator}
+                            </td>
+                            <td className="border px-4 py-2 whitespace-pre-line font-mono text-sm">
+                              {item.example}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              {/* identify  operator  */}
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    5. Identity Operator ={" "}
+                  </span>
+                  This operator are used to determine whether the value of a
+                  variable is a certain type of not .
+                </p>
+                <div className="flex items-center justify-center p-6">
+                  <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+                    <h1 className="text-xl font-bold text-center mb-6">
+                      Identity Operators in Python
+                    </h1>
+
+                    <table className="table-auto border border-gray-300 w-full">
+                      <thead className="bg-gray-200">
+                        <tr>
+                          <th className="border px-4 py-2 text-left">
+                            Operator
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Description
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Example
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {identify.map((item, index) => (
+                          <tr key={index} className="hover:bg-gray-50">
+                            <td className="border px-4 py-2 font-medium">
+                              {item.operator}
+                            </td>
+                            <td className="border px-4 py-2">
+                              {item.description}
+                            </td>
+                            <td className="border px-4 py-2 whitespace-pre-line font-mono text-sm">
+                              {item.example}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              {/* membership  operator  */}
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    6. Membership Operator ={" "}
+                  </span>
+                  This operator are used to check if a value is a member of
+                  given list or not .
+                </p>
+                <div className="flex items-center justify-center p-6">
+                  <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+                    <h1 className="text-xl font-bold text-center mb-6">
+                      Membership Operators in Python
+                    </h1>
+
+                    <table className="table-auto border border-gray-300 w-full">
+                      <thead className="bg-gray-200">
+                        <tr>
+                          <th className="border px-4 py-2 text-left">
+                            Operator
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Description
+                          </th>
+                          <th className="border px-4 py-2 text-left">
+                            Example
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {membership.map((item, index) => (
+                          <tr key={index} className="hover:bg-gray-50">
+                            <td className="border px-4 py-2 font-medium">
+                              {item.operator}
+                            </td>
+                            <td className="border px-4 py-2">
+                              {item.description}
+                            </td>
+                            <td className="border px-4 py-2 whitespace-pre-line font-mono text-sm">
+                              {item.example}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </motion.ul>
           </div>
-          {/* Function of Operating system  */}
+          {/*Expression  */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Function of operating system
+              Expression
+            </p>
+            <p>
+              {" "}
+              It is defined as a combination of constatnt ,variable and operator
+              .{" "}
+            </p>
+            <p>
+              {" "}
+              <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                {" "}
+                Example :{" "}
+              </span>
+              c = a + b<p> n = n * 10 </p>
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  1. Process Management ={" "}
-                </span>
-                The main task of the operating system is to manage a various
-                (many) process and get multiple task completed in minimum time
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  2. Memory Management ={" "}
-                </span>
-                It manage the main memory by keeping the track of every location
-                with in the memory as free of occupied .
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  3. File Management ={" "}
-                </span>
-                It invovles the creation , updation , deletion and protection of
-                the files in a secoondary memory .
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  4. Device management ={" "}
-                </span>
-                It manages a many input and output devices by interacting with
-                their related software .
-              </p>
-            </motion.ul>
+            ></motion.ul>
           </div>
-          {/*  OS  user interface  */}
+          {/*  Precednece of operator   */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              OS users interface
+              Precedence of operators
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-[lower-alpha] pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+              className="list-disc-none  pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              <li>Command base interface</li>
-              <li>Graphical user interface</li>
-              <li>Touch based interface</li>
-              <li>Voice based interface</li>
+              <li>
+                {" "}
+                If an expression contain different kind of operator then
+                precedence of determine which operator should be operate first .{" "}
+              </li>
             </motion.ul>
           </div>
-          {/* programing lagnuage  */}
+          {/* table of precedence of operators  */}
+          <div>
+            <div className="flex items-center justify-center p-6">
+              <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+                <table className="table-auto border border-gray-300 w-full">
+                  <thead className="bg-gray-200">
+                    <tr>
+                      <th className="border px-4 py-2 text-left">
+                        Order of precedence
+                      </th>
+                      <th className="border px-4 py-2 text-left">Operator</th>
+                      <th className="border px-4 py-2 text-left">
+                        Description
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {precedence.map((item, index) => (
+                      <tr key={index} className="hover:bg-gray-50">
+                        <td className="border px-4 py-2 font-medium">
+                          {item.order}
+                        </td>
+                        <td className="border px-4 py-2">{item.operator}</td>
+                        <td className="border px-4 py-2 whitespace-pre-line font-mono text-sm">
+                          {item.discription}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          {/* statement lagnuage  */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Programing Language
+              Statement
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+              className="list-disc-none pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              A language which are developed to written a cot (instruction)
+              It is a unit of code that the python interpreter can execute .
+              <p>
+                {" "}
+                <span> Example</span>
+                <li> a = 10 </li>
+                <li> b = 20 </li>
+                <li> c = a + b </li>
+                <li>30</li>
+              </p>
             </motion.ul>
           </div>
-          {/*  translator  */}
+          {/*  input and output   */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Language Translator
+              input and output
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+              className="list-disc-none  pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              It is used to convert the high level language to low level
-              lnaguage (0,1)
-            </motion.ul>
-          </div>
-          {/* properitary Software  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Proprietary Software
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              A software which has to be purchased is called a proprietary
-              software .
+              In python () function is used to take the data from user .
               <p>
                 <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
                   {" "}
-                  Example =
+                  Syntax{" "}
                 </span>
-                MS Office , Windows
+                <li> input (prompt ) </li>
+                <li> Here , prompt is a string </li>
+                <li>
+                  {" "}
+                  In python print () function is used to display the output on
+                  the screen{" "}
+                </li>
+                <li>
+                  <span> Example </span>
+                  <li> Name = input ('Enter any name ') </li>
+                  <li> Print (Name) </li>
+                </li>
               </p>
             </motion.ul>
           </div>
-          {/* free software  */}
+          {/* Type conversion   */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Free Software{" "}
+              Type Conversion
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+              className="list-disc-none  pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              A software which are freely available for a use is called free
-              software .
+              A process to convert the data type of value into a another data
+              type is called type conversion.
+              <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
+                There are two types of conversion
+              </p>
+              {/* /implcit */}
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
+                  {" "}
+                  1. Inplicit Conversion ={" "}
+                </span>
+                When the data type conversion is done automaticallly by python
+                interpreter it is known as implict conversion .
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
+                    Example :{" "}
+                  </span>
+                  <li> n1 = 10 </li>
+                  <li> n2 = 20.5 </li>
+                  <li> S = n1 + n2 </li>
+                  <li> {">>> "} 30.5 </li>
+                </p>
+              </p>
+              {/* explict conversion  */}
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
+                  {" "}
+                  2. Explicit Conversion ={" "}
+                </span>
+                When the data type conversion is done by the user (programmer)
+                this knonwn as explicit conversion .
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
+                    Syntax :{" "}
+                  </span>
+                  <li className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
+                    {" "}
+                    New data type (expression ){" "}
+                  </li>
+                  <li> n1 = 10.5 </li>
+                  <li> n2 = 5.2 </li>
+                  <li> S = n1 + n2 </li>
+                  <li> print [int(5)] </li>
+                  <li> {">>> "} 15 </li>
+                </p>
+              </p>
             </motion.ul>
           </div>
-          {/* open source software  */}
+          {/* debugging  */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Open Source Software
+              Debugging
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -789,14 +1415,14 @@ export default function ChapterFive() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              A software which are freely available with their software source
-              is called a open source software .
+              A process to indentify and remove the error from program is called
+              debugging .
             </motion.ul>
           </div>
-          {/* FOSS */}
+          {/* types of errors   */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              FOSS
+              There are three types of occur in a program
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -804,7 +1430,16 @@ export default function ChapterFive() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              Free and open source software
+              {error.map((v, i) => {
+                return (
+                  <li>
+                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
+                      {v.heading} =
+                    </span>
+                    {v.content}
+                  </li>
+                );
+              })}
             </motion.ul>
           </div>
         </motion.div>
