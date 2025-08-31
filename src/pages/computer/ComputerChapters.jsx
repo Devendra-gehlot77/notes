@@ -44,7 +44,7 @@ export default function ComputerChapters() {
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 6 - File Handling",
+                  chapter: "Chapter 6 - FLow of Control",
                   link: "/computer/chapters/ch-six",
                 },
                 {
@@ -119,7 +119,7 @@ export default function ComputerChapters() {
             },
             {
               cls: "11th",
-              chapter: "Chapter 6 - File Handling",
+              chapter: "Chapter 6 - FLow of Control",
               link: "/computer/chapters/ch-six",
             },
             {

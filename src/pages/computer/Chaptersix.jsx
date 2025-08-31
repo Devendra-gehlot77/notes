@@ -226,7 +226,7 @@ export default function Chaptersix() {
               specified condition . This process is called repetition
             </motion.ul>
           </div>
-          {/*  computer system */}
+          {/*  loops  */}
           <div className="mt-4">
             <motion.ul
               initial={{ opacity: 0 }}
@@ -238,68 +238,206 @@ export default function Chaptersix() {
                 {" "}
                 There are two looping structure in a python
               </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  1. For loop =
-                </span>
-                This loop is executed till the given reange or a sequence
-              </p>
-              {/* syntax  */}
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  Syntax :{" "}
-                </span>
-                for control in range or sequence :<p> variable </p>
-                <p>statement </p>
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  Example :{" "}
-                </span>
-                for i in range (5)
-                <p> print(i)</p>
-                <p> output :  </p>
-                <div className="ms-18">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-                </div>
-              </p>
-              <span>
-                {/*  secondary */}
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  2. Secondary Memory
-                </span>
-                <li>
-                  {" "}
-                  It is a non - voletile memory (permanent) it is store the data
-                  for future use .{" "}
-                </li>
-              </span>
-              <span>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  Example :
-                </span>
-                - Hardisk , pendrive , memory card etc
-              </span>
+              {/*  for loop */}
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    1. For loop =
+                  </span>
+                  This loop is executed till the given reange or a sequence
+                </p>
+                {/* syntax  */}
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Syntax :{" "}
+                  </span>
+                  for control in range or sequence :<p> variable </p>
+                  <p>statement </p>
+                </p>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  for i in range (5)
+                  <p> print(i)</p>
+                  <p> output : </p>
+                  <div className="ms-18">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                  </div>
+                </p>
+              </div>
+              {/* While loop */}
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    2. While loop =
+                  </span>
+                  While statement execute the statement repeatedly till the
+                  condition of loop is true .
+                </p>
+                {/* syntax  */}
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Syntax :{" "}
+                  </span>
+                  initial value
+                  <p> Whole (condition) </p>
+                  <p>statement </p>
+                  <p> + + / - -</p>
+                </p>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  i = 1 (5)
+                  <p> While (i {"<="} 5) </p>
+                  <p> print (i) </p>
+                  <p> i = l + 1 </p>
+                  <p> output : </p>
+                  <div className="ms-18">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                  </div>
+                </p>
+              </div>
             </motion.ul>
           </div>
-          {/*  cache memory  */}
+          {/*  Range function   */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Cache Memory
+              Range function
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+              className="list-[num] pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              <li>It is used to speed up a operation of CPU .</li>
+              It is a inbuilet function it is used to create a list from given
+              the start value up to stop value with the given step value .
+              <div>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Syntax :{" "}
+                  </span>
+                  range (start , stop , step )
+                </p>
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  <li className="ms-14"> range (5) </li>
+                  <p className="ms-18"> [0,1,2,3,4]</p>
+                  <li className="ms-14"> range (5 , 10 ) </li>
+                  <p className="ms-18"> [5, 6 , 7 , 8 , 9]</p>
+                  <li className="ms-14"> range (0 , 30 , 5) </li>
+                  <p className="ms-18"> [0 , 5 , 10 , 15 , 20 , 25]</p>
+                </p>
+              </div>
+            </motion.ul>
+          </div>
+          {/* Break statement   */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+              Break statement
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className=" pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              The break statement terminate the loop and some particular
+              condition and come out the loop continue the statement execution
+              after that loop .
+              <div>
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  <p> for i in range (0,10)</p>
+                  <p>if ( i == 6 ) : </p>
+                  <p>break </p>
+                  <p> print (i) </p>
+                </p>
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Output :{" "}
+                  </span>
+                  <div className="ms-20">
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                  </div>
+                </p>
+              </div>
+            </motion.ul>
+          </div>
+          {/*  continue statement  */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+              Continue statement
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className=" pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              Continue statement is used to skip the statement at particular
+              condition and then again jump to the loop for the next statement
+              <div>
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  <p>  i in range (0,10)</p>
+                  <p>if ( i == 6 ) : </p>
+                  <p>continue  </p>
+                  <p> print (i) </p>
+                </p>
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    Output :{" "}
+                  </span>
+                  <div className="ms-20">
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                  </div>
+                </p>
+              </div>
             </motion.ul>
           </div>
           {/*  unit of memory  */}
