@@ -49,7 +49,7 @@ export default function ComputerChapters() {
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 7 - Database Management System (DBMS)",
+                  chapter: "Chapter 7 - Funcitons",
                   link: "/computer/chapters/ch-seven",
                 },
                 {
@@ -124,7 +124,7 @@ export default function ComputerChapters() {
             },
             {
               cls: "12th",
-              chapter: "Chapter 7 - Database Management System (DBMS)",
+              chapter: "Chapter 7 - Funtions",
               link: "/computer/chapters/ch-seven",
             },
             {
