@@ -54,7 +54,7 @@ export default function ComputerChapters() {
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 8 - SQL Queries",
+                  chapter: "Chapter 8 - String",
                   link: "/computer/chapters/ch-eight",
                 },
                 {
@@ -129,7 +129,7 @@ export default function ComputerChapters() {
             },
             {
               cls: "12th",
-              chapter: "Chapter 8 - SQL Queries",
+              chapter: "Chapter 8 -String",
               link: "/computer/chapters/ch-eight",
             },
             {
