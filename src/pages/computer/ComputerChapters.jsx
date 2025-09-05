@@ -64,7 +64,7 @@ export default function ComputerChapters() {
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 10 - Networking & Internet",
+                  chapter: "Chapter 10 - Tuple and Dictionary",
                   link: "/computer/chapters/ch-ten",
                 },
               ].map((row, i) => (
@@ -139,7 +139,7 @@ export default function ComputerChapters() {
             },
             {
               cls: "12th",
-              chapter: "Chapter 10 - Networking & Internet",
+              chapter: "Chapter 10 - Tuple and Dictionary ",
               link: "/computer/chapters/ch-ten",
             },
           ].map((row, i) => (
