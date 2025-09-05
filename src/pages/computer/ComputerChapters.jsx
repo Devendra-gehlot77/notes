@@ -59,7 +59,7 @@ export default function ComputerChapters() {
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 9 - Object-Oriented Programming (OOPs)",
+                  chapter: "Chapter 9 - List  ",
                   link: "/computer/chapters/ch-nine",
                 },
                 {
@@ -134,7 +134,7 @@ export default function ComputerChapters() {
             },
             {
               cls: "12th",
-              chapter: "Chapter 9 - Object-Oriented Programming (OOPs)",
+              chapter: "Chapter 9 - List",
               link: "/computer/chapters/ch-nine",
             },
             {
