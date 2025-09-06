@@ -63,16 +63,16 @@ export default function Chapterten() {
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
               If we are using a single element in a tuple then the element
-              should be follow by comma . If we use element without comma .  It is
-              treated as a int data type not tuple data type .
-              <p> T1 = (20) {'->'} Tuple data type </p>
-               <p> T1 = (20) {'->'} Integer data type </p>
+              should be follow by comma . If we use element without comma . It
+              is treated as a int data type not tuple data type .
+              <p> T1 = (20) {"->"} Tuple data type </p>
+              <p> T1 = (20) {"->"} Integer data type </p>
             </motion.ul>
           </div>
-          {/* input devies */}
+          {/* accessing element in a tuple  */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Input devices
+              Accessing element in a tuple
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -80,20 +80,25 @@ export default function Chapterten() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              <li>It is a electronic devices.</li>
-              <li>
-                It takes the data from users , processing and generate the
-                output on the screen .
-              </li>
-              <li>
-                Hardware and software together is called computer system .
-              </li>
+              Element of a tuple can be accessing by using indexing .
+              <section>
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    Example :
+                  </span>{" "}
+                  T = (2,4,6,8,10,12)
+                  <p> T(0) = 2 </p>
+                  <p> T(10) = index error </p>
+                  <p> T(12) = 5 </p>
+                </p>
+              </section>
             </motion.ul>
           </div>
-          {/* output device  */}
+          {/*  Tuple is Immutable  */}
           <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Output Devices
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+              Tuple is Immutable
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -101,125 +106,66 @@ export default function Chapterten() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              <li>
-                A device which is used to recieve the data from computer is
-                called output device
-              </li>
-              <li>It converts the digital data (0,1) into human form . </li>
-              <li>
+              It is a immutable data type it mean it created we cannot change it
+              .
+              <p>
                 <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
                   example :
                 </span>
-                Monitor , printer
-              </li>
-            </motion.ul>
-          </div>
-          {/* evolution of computer  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Evolution of computer
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <li>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  500 years ago BC =
-                </span>
-                Abacus
-              </li>
-              <li>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  1642 =
-                </span>
-                Pascaline (calculator)
-              </li>
-              <li>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  1834 =
-                </span>
-                Analytic Engine
-              </li>
-              <li>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  1890 =
-                </span>
-                Electrical Engine
-              </li>
-              <li>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  1945 =
-                </span>
-                EDVAC / ENTAC
-              </li>
-              <li>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  1947 =
-                </span>
-                Trensistors based
-              </li>
-              <li>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  1970 =
-                </span>
-                Integrated Circuit (IC)
-              </li>
-            </motion.ul>
-          </div>
-          {/*  computer system */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Computer System
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <li>
-                It is used to store a data and instructions ( information )
-              </li>
-              <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                {" "}
-                There are mainly two types of memory{" "}
+                t = (2,4,6,8,10,12)
+                <p className="ms-20"> {">>>"} t(0) = 6 </p>
+                <p className="ms-20"> Error </p>
               </p>
-              <span>
+            </motion.ul>
+          </div>
+          {/*  Tuple operations */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Tuple operations
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              <section>
                 <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  1. Primary Memory
+                  1.Concate Nation =
                 </span>
-                <li> It is a volatile (temporary) memory . </li>
-              </span>
-              <li>
-                The data will be remain in a till the power supply is on .
-              </li>
-              <li>It directly works with the CPU</li>
-              <span>
-                {/*  secondary */}
+                Join two tuple using the plus operator (+)
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  T1 = (1,2,3,4)
+                  <p className="ms-20"> T2 = (5,6,7,8) </p>
+                  <p className="ms-20"> {">>>"} T1 + T2 </p>
+                  <p className="ms-20"> (1,2,3,4,5,6,7,8) </p>
+                </p>
+              </section>
+              <section>
+                {/*  repetition */}
                 <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  2. Secondary Memory
+                  2. Repetition =
                 </span>
-                <li>
-                  {" "}
-                  It is a non - voletile memory (permanent) it is store the data
-                  for future use .{" "}
-                </li>
-              </span>
+                Repetition means to repeat the given tuple of using operator(*)
+              </section>
               <span>
                 <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
                   Example :
                 </span>
-                - Hardisk , pendrive , memory card etc
+                T1 - (1,2,3)
+                <p className="ms-20">T1*3</p>
+                <p className="ms-20"> (1,2,3,1,2,3,1,2,3) </p>
               </span>
             </motion.ul>
           </div>
-          {/*  cache memory  */}
+          {/* membership */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Cache Memory
+              Membership
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -227,331 +173,236 @@ export default function Chapterten() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              <li>It is used to speed up a operation of CPU .</li>
-            </motion.ul>
-          </div>
-          {/*  unit of memory  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Unit of Memory
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <li> 0 , 1 = Bit </li>
-              <li> 4 Bit = 1 Hibble </li>
-              <li> 8 Bit = 1 byte </li>
-              <li> 1024 bit = 1kb </li>
-              <li>1024 kb = 1Mb </li>
-              <li> 1024 mb = 1Gb </li>
-              <li> 1024 gb = 1Tb </li>
-              <li>1024 tb = 1Pb </li>
-              <li> 1024 pb = 1Eb </li>
-              <li>1024 eb = 1Zb </li>
-              <li> 1024 zb = 1Yb </li>
-            </motion.ul>
-          </div>
-          {/*   Data transfeer  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Data transfer between memory and CPU
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <li>
-                Data are transfered between different component (part) of
-                computer system using wire is called bus .{" "}
-              </li>
-              <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                There are three bypes of bus
-              </p>
-              <p>
+              <section>
                 <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  1. Data bus ={" "}
+                  1.in =
                 </span>
-                It is used to transfer data between different components .
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  2. Adress bus ={" "}
-                </span>
-                It is used to transfer adress between .
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  3. Control bus ={" "}
-                </span>
-                It is used to communited and control the signal between
-                different components of computer .
-              </p>
-            </motion.ul>
-          </div>
-          {/*  Cpu / mircor processor signification */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              CPU / Microprocessor Significatoin
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  1. Word Size ={" "}
-                </span>
-                It is a maximum number of bites that a processor can process at
-                a time.
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  2. Memory size ={" "}
-                </span>
-                Depending on word size of teh ram can be chagne
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  3. Clock Speed ={" "}
-                </span>
-                It indicate the speed at which the computer can process the
-                instructions .
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  4. Cores ={" "}
-                </span>
-                It is a calculations (calculate) unit of CPU . It has 2,4,8
-                cores.
-              </p>
-            </motion.ul>
-          </div>
-          {/*  data  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Data
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <li> Everything in a computer system is called data . </li>
-              <li>
-                {" "}
-                It can be rawfacts , number (0 to 9) , alphabets , symbols ,
-                pictures , audio , radio , etc{" "}
-              </li>
-            </motion.ul>
-          </div>
-          {/* Information */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Information
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <li>
-                When we user converts the raw and unorganised data into a
-                meaningfull term is caled a information{" "}
-              </li>
-            </motion.ul>
-          </div>
-          {/*  types of data  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Types of Data
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  1. Structure data ={" "}
-                </span>
-                When data are stored in a table form and follow up specific
-                (particular) rule is called structure data.
-                <p className="ms-5">
-                  {" "}
-                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                    example ={" "}
-                  </span>{" "}
-                  Attendence of the student
-                </p>
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  2. Unstructure data ={" "}
-                </span>
-                When data are not organised in a specific formate that is called
-                unstrucuure data.
-                <p className="ms-5">
-                  {" "}
-                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                    example ={" "}
-                  </span>{" "}
-                  Report card , Newspaper
-                </p>
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  3.Semi structure data ={" "}
-                </span>
-                Data which have no specific formate but maintain a some rules .
-                <p className="ms-5">
-                  {" "}
-                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                    example ={" "}
-                  </span>{" "}
-                  E-mail , Documents
-                </p>
-                <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed  mt-2">
-                  {" "}
-                  Types of Process of Semi structure data{" "}
-                </p>
-                <ul>
-                  <li>
-                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                      {" "}
-                      Data capturing ={" "}
-                    </span>
-                    A process of gather (collect) data from different sources is
-                    called data capturing .
-                  </li>
-                  <li>
-                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                      {" "}
-                      Data storage ={" "}
-                    </span>
-                    A process of storing a data in a storage device (memory) is
-                    called data storage .
-                  </li>
-                  <li>
-                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                      {" "}
-                      Data Retrival ={" "}
-                    </span>
-                    It involves fetching data from storage device is called data
-                    retrival .
-                  </li>
-                  <li>
-                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                      {" "}
-                      Software ={" "}
-                    </span>
-                    It is a set of instruction which is return for the specific
-                    purpose of task .
-                  </li>
-                </ul>
-              </p>
-            </motion.ul>
-          </div>
-          {/* types of software  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Types of software
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  1. System software ={" "}
-                </span>
-                A software that provide a basic instruction (function) to
-                operate a computer .
-                <p className="ms-5">
-                  {" "}
-                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                    example ={" "}
-                  </span>{" "}
-                  Operating system , Device Driver
-                </p>
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  2. Application Software ={" "}
-                </span>
-                A software which is written for a specific purpose (task)
-                accoding to the need of users .
-                <p className="ms-5">
-                  {" "}
-                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                    example ={" "}
-                  </span>{" "}
-                  M.S Office , Photoshop
-                </p>
-                <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed  mt-2 ms-4">
-                  {" "}
-                  It has Two Category of software{" "}
-                </p>
-                <li className="ms-9">
-                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2 ">
+                This operator checks the element in a present in the tuple then
+                result will be true otherwise false .
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
                     {" "}
-                    General purpose ={" "}
+                    Example :{" "}
                   </span>
-                  They are redimed application software that can be used by
-                  users as their need (requirements)
-                </li>
-                <li className="ms-9">
+                  t = (1,2,3,4,5,6)
+                  <p className="ms-20"> 3 in t </p>
+                  <p className="ms-20"> True </p>
+                  <p className="ms-20"> 7 in t </p>
+                  <p className="ms-20"> False</p>
+                </p>
+              </section>
+              <section>
+                {/*  repetition */}
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  2. not in =
+                </span>
+                This operator checks the elements in not present in a tuple then
+                result will be true otherwise false .
+              </section>
+              <span>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  Example :
+                </span>
+                t - (1,2,3,4,5)
+                <p className="ms-20"> 3 not in t </p>
+                <p className="ms-20"> False </p>
+                <p className="ms-20"> 7 not in t </p>
+                <p className="ms-20"> True</p>
+              </span>
+            </motion.ul>
+          </div>
+          {/* Slicing */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+              Slicing
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              This operator can display the sub part of the tuple
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  example :
+                </span>
+                t = (1,2,3,4,5)
+                <p className="ms-20"> {">>>"} t(2:5) </p>
+                <p className="ms-20"> (3,4,5) </p>
+              </p>
+            </motion.ul>
+          </div>
+          {/*  Tuple method built in function */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Tuple method and built in function
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  1.len() ={" "}
+                </span>
+                It display the length of the tuple .
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  T1 = (1,2,3,4,5)
+                  <p> len(T1) </p>
+                  <p> 5 </p>
+                </p>
+              </p>
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  2.Tuple() ={" "}
+                </span>
+                It is used to create empty tuple
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  T1 = tuple()
+                </p>
+              </p>
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  3.count() ={" "}
+                </span>
+                It dislay the number of time the element appear in a tuple
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  T1 = (1,2,3,4,2,2,5,2)
+                  <p> T1 = count(2) </p>
+                  <p> 4 </p>
+                </p>
+              </p>
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  4.index() ={" "}
+                </span>
+                It display the index of the first occurrence of the given
+                element in a tuple .
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  T1 = (1,2,3,4,5)
+                  <p> T1 = index(3) </p>
+                  <p> 2 </p>
+                </p>
+              </p>
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  5.Sorted() ={" "}
+                </span>
+                TI arranged teh element in a ascending order .
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  T1 = (1,3,5,2,4)
+                  <p> T1 = sorted() </p>
+                  <p> (1,2,3,4,5) </p>
+                </p>
+              </p>
+              <p>
+                <section>
                   <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
                     {" "}
-                    Customised Software ={" "}
+                    6.min() ={" "}
                   </span>
-                  They are customed software that are written for a specific
-                  organisation or (individual) .
-                </li>
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  3. Utility Software ={" "}
-                </span>
-                A software that is used to maintain the computer system
-                <p className="ms-5">
-                  {" "}
+                  It display the smallest element of the tuple .
+                </section>
+                <section>
                   <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                    example ={" "}
-                  </span>{" "}
-                  Anitvirus software
+                    {" "}
+                    max() ={" "}
+                  </span>
+                  It display the largest element of the tuple
+                </section>
+                <section>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    sum() ={" "}
+                  </span>
+                  IT display the sum of element of the tuple
+                </section>
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  T1 = (1,2,3,4,5)
+                  <p className="ms-20"> min(T1) = 1 </p>
+                  <p className="ms-20"> max(T1) = 10 </p>
+                  <p className="ms-20"> sum(T1) = 25 </p>
                 </p>
               </p>
             </motion.ul>
           </div>
-          {/* operating system  */}
+          {/*  tuple assigment   */}
           <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Operating system
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Tuple Assigment
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              It allow the tuple of variables on the left side of assigment
+              operator to be assigmet respective value of the right side .
+              <p> (n1,n2) = (10,30) </p>
+            </motion.ul>
+          </div>
+          {/* nested tuple */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Nested Tuple
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              when a tuple appera as an element of the another list is called a
+              nested tuple .
+              <section>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  Example :
+                </span>
+                <p>t1 = (1,2,3,4,(5,6,7),8) </p>
+                <p> {">>>"} t(4) </p>
+                <p> (5,6,7) </p>
+                <p> {">>>"} t (4) (1) </p>
+                <p> 4 </p>
+              </section>
+            </motion.ul>
+          </div>
+          {/* dictionary */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Dictionary
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -560,22 +411,20 @@ export default function Chapterten() {
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
               <li>
-                A software that operate computer system is called operating
-                system .
+                The data type dictionary fall under mappin . It is a mappin
+                between a set of keys ad a set of values . The key value pair is
+                called an item .
               </li>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  example ={" "}
-                </span>
-                windows 7 , 8 , 9 ,10
-              </p>
+              <li>
+                A key is separated by a colon (:) and consecutive items are
+                separated by comma .
+              </li>
             </motion.ul>
           </div>
-          {/* Function of Operating system  */}
+          {/* creatign dictionary */}
           <div className="mt-4">
             <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              Function of operating system
+              Creating a Dictionary
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -583,112 +432,85 @@ export default function Chapterten() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              <p>
+              <li>
+                The item centred are separate by comma and in closed by curly
+                bracket {"{}"} .
+              </li>
+              <li>Each item has a key value pair .</li>
+              <li>
+                The key must be unique and should be any immutable data type .
+              </li>
+              <li>
                 <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  1. Process Management ={" "}
-                </span>
-                The main task of the operating system is to manage a various
-                (many) process and get multiple task completed in minimum time
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  2. Memory Management ={" "}
-                </span>
-                It manage the main memory by keeping the track of every location
-                with in the memory as free of occupied .
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  3. File Management ={" "}
-                </span>
-                It invovles the creation , updation , deletion and protection of
-                the files in a secoondary memory .
-              </p>
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-                  {" "}
-                  4. Device management ={" "}
-                </span>
-                It manages a many input and output devices by interacting with
-                their related software .
-              </p>
-            </motion.ul>
-          </div>
-          {/*  OS  user interface  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
-              OS users interface
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-[lower-alpha] pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              <li>Command base interface</li>
-              <li>Graphical user interface</li>
-              <li>Touch based interface</li>
-              <li>Voice based interface</li>
-            </motion.ul>
-          </div>
-          {/* programing lagnuage  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Programing Language
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              A language which are developed to written a cot (instruction)
-            </motion.ul>
-          </div>
-          {/*  translator  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Language Translator
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              It is used to convert the high level language to low level
-              lnaguage (0,1)
-            </motion.ul>
-          </div>
-          {/* properitary Software  */}
-          <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Proprietary Software
-            </p>
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
-            >
-              A software which has to be purchased is called a proprietary
-              software .
-              <p>
-                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-                  {" "}
                   Example =
                 </span>
-                MS Office , Windows
+                int , flost ,etc
+              </li>
+              <p>The value can be repeat and can be of any data type .</p>
+              <ul>
+                <li>
+                  {" "}
+                  d1 = {} -{">"} Created a empty Dictionary .{" "}
+                </li>
+                <li> d1 = dist () </li>
+                <p>d1 = {'{"Ram" : 90 , "Shyam":30 , "Dev":34}'}</p>
+              </ul>
+            </motion.ul>
+          </div>
+          {/* accessing itme in dictionary  */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Accessing itmen in Dictionary
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              The item of dictionary are accessed by the item key o feach key
+              treated as a index and display a value
+              <section>
+                <p>
+                  {" "}
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    Example :
+                  </span>{" "}
+                  d1 = {'{"Ram":40,"shyam":30,"dev":90}'}
+                </p>
+              </section>
+            </motion.ul>
+          </div>
+          {/*  dictionary is Immutable  */}
+          <div className="mt-4">
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+              Dictionary is mutable
+            </p>
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+            >
+              It is a mutable data type it means that the element of dictionary
+              can be change after it created .
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  example :
+                </span>
+                d1 = {'{"Ram":40,"shyam":30,"dev":90}'}
+                <p> d1 = ["Khus"] = 85</p>
+                <p> d1 = {'{"Ram":40,"shyam":30,"dev":90},"khus"'}</p>
               </p>
             </motion.ul>
           </div>
-          {/* free software  */}
+          {/* Dictionry operation   */}
           <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Free Software{" "}
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Dictionary Operations
+            </p>
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Membership
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -696,14 +518,48 @@ export default function Chapterten() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              A software which are freely available for a use is called free
-              software .
+              <section>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  1.in =
+                </span>
+                This operator checks the key is present in a dictionary then
+                result will be true otherwise false .
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                  <p> "dev" in d1 </p>
+                  true
+                  <p> "raj" in d1 </p>
+                  False
+                </p>
+              </section>
+              <section>
+                {/*  repetition */}
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  2. not in =
+                </span>
+                This operator checks the key is not present in a dictionary then
+                result will be true otherwise false .
+              </section>
+              <span>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  Example :
+                </span>
+                d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                <p> "dev" not in d1 </p>
+                False
+                <p> "raj" not in d1 </p>
+                True
+              </span>
             </motion.ul>
           </div>
-          {/* open source software  */}
+          {/* Traversing a  dictionary  */}
           <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              Open Source Software
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Traversing a dictionary
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -711,14 +567,24 @@ export default function Chapterten() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              A software which are freely available with their software source
-              is called a open source software .
+              We can access each item of dictionary by using for loop .
+              <section>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  Example :
+                </span>
+                d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                <p> for i in d1 </p>
+                <p> print(i , ":" , d1[i]) </p>
+                <p> Ram : 90 </p>
+                <p> shyam : 30 </p>
+                <p> dev : 40 </p>
+              </section>
             </motion.ul>
           </div>
-          {/* FOSS */}
+          {/*  Dictionary method built in function */}
           <div className="mt-4">
-            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-1">
-              FOSS
+            <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+              Dictionary method and built in function
             </p>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -726,7 +592,163 @@ export default function Chapterten() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
             >
-              Free and open source software
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  1.len() ={" "}
+                </span>
+                It display the length of items of Dictionary .
+                <p>
+                  <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </p>
+                  d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                  <p> {">>>"} len(d1) </p>
+                  <p> 3 </p>
+                </p>
+              </p>
+              <p>
+                <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  2.keys() ={" "}
+                </p>
+                It display the list of key in a dictionary
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                  <p> d1 : keys() </p>
+                  <p> ["Rma" , "shyam" , "dev"] </p>
+                </p>
+              </p>
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  3.Dictionary() ={" "}
+                </span>
+                It create the dictionary from the square of tuple .
+                <p>
+                  <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </p>
+                  d1 = {"{('Ram':90),('shyam':30),('dev':40)}"}
+                  <p> d2 = dict(d1) </p>
+                  <p> {">>>"} d2 </p>
+                  <p> {"{'Ram':90,'shyam':30,'dev':40}"} </p>
+                </p>
+              </p>
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  4.values() ={" "}
+                </span>
+                It display the list of values in a dictionary
+                <p>
+                  <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </p>
+                  d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                  <p> d1.values()</p>
+                  [90,30,40]
+                </p>
+              </p>
+              <p>
+                <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                  {" "}
+                  5.items() ={" "}
+                </span>
+                It return the list of tuple
+                <p>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed ">
+                    {" "}
+                    Example :{" "}
+                  </span>
+                  d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                  <p> d.item() </p>
+                  {"[('Ram':90),('shyam':30),('dev':40)]"}
+                </p>
+              </p>
+              <p>
+                <section>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    6.get() ={" "}
+                  </span>
+                  It return the value of related the key that is passed as a
+                  argument . If the key is not present in dictionary it will
+                  return none .
+                  <p>
+                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+                      {" "}
+                      Example :
+                    </span>
+                    d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                    <p> d1.get("shyam")</p>
+                    30
+                  </p>
+                </section>
+              </p>
+              <p>
+                <section>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    7.update() ={" "}
+                  </span>
+                  It change the key value pair of a dictionary with the given
+                  key value pair as a argument .
+                  <p>
+                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+                      {" "}
+                      Example :
+                    </span>
+                    d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                    <p>d2 = "Khus" : 33</p>
+                    {"{'Ram':90,'shyam':30,'dev':40 , 'khus':33}"}
+                  </p>
+                </section>
+              </p>
+              <p>
+                <section>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    8.del() ={" "}
+                  </span>
+                  It delete the item with the given key
+                  <p>
+                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+                      {" "}
+                      Example :
+                    </span>
+                    d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                    <p>del.d1['dev']</p>
+                    {"{'Ram':90,'shyam':30}"}
+                  </p>
+                </section>
+              </p>
+              <p>
+                <section>
+                  <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed mb-2">
+                    {" "}
+                    7.clear() ={" "}
+                  </span>
+                  It clear all the item of a dictionary
+                  <p>
+                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+                      {" "}
+                      Example :
+                    </span>
+                    d1 = {"{'Ram':90,'shyam':30,'dev':40}"}
+                    <p> d1 = clear()</p>
+                    <p> {'>>>'}d1 </p>
+                    {'{}'}
+                  </p>
+                </section>
+              </p>
             </motion.ul>
           </div>
         </motion.div>
