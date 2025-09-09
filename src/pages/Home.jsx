@@ -90,7 +90,7 @@ export default function Homemenu() {
               Explore English notes & guides.
             </p>
             <Link
-              href="/subjects/english"
+              href="/english"
               className="text-blue-600 font-medium hover:underline"
             >
               View Notes →
