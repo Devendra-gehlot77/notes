@@ -29,17 +29,17 @@ export default function Englishchapter() {
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 3 - Data Representation",
+                  chapter: "Chapter 3 - Discovering :  Tut & The Saga Continues ",
                   link: "/english/chapters/ch-three",
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 4 - Introdcution to problem solving ",
+                  chapter: "Chapter 4 - The Ailing Planet",
                   link: "/english/chapters/ch-four",
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 5 - Functions in Python",
+                  chapter: "Chapter 5 - The Adventure",
                   link: "/english/chapters/ch-five",
                 },
                 {

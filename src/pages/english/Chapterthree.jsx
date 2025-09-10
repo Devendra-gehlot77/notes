@@ -6,48 +6,81 @@ export default function Chapterthree() {
   const qustans = [
     {
       qustno: "Q1",
-      qust: " Why did the author's grandmother not like the music lesson ?",
-      ans: "   According to the author's grandmother , music has lend associations . It is the menopoly of harlots and beggars . It is not meant for gentle folk .",
+      qust: " Why has king Tut's body been subjected to repeated scrutiny ?",
+      ans: " The king Tut's body has been repeated scrutiny becuase he had died untimely .  It was a mystery to find out how he died  . How old he  when he died .",
     },
     {
       qustno: "Q2",
-      qust: "  Why did the grandmother not like the english lessons ? // or Three rearons why the author's grandmother was disturbed when he started going to the city school",
-      ans: " The grandmother was   disturbed when the author went to the city school because there was no teacting of God and scriptures . She did not believe in things that they taught him in school.",
+      qust: "Why howard Carter's investigation was resented ?",
+      ans: "  Howard Carter's investigation was resented because he had demaged the mummy and revealed no thing He paid much attention on muraks and treasures and less money . ",
     },
     {
       qustno: "Q3",
-      qust: "   How did grandmother spend her time in city house ? // or Three ways in which the author grandmother spent her days after he graw up?",
-      ans: " Tn city house the grandmother spend her most of time with spinning wheel and reciting prayer . She would feed  the sparrow in the backyard for half an hour in the Afternoon.",
+      qust: " Why Carter had to chisel away the solidified resins to raise the king's remain?",
+      ans: " Carter had to chisel away the solidified resine to raiee the Tut's remains becuase the  ritual resins had hardened the mummy .  The real efforts of human body could not move to coffin the ",
     },
     {
       qustno: "Q4",
-      qust: "   The old way in which the author's grandmother behaved just before she died. ",
-      ans: " The grandmother got an old drum . She collcted the women of her nighbourhood and sang the song of home. Coming warriors . She did not pray.",
+      qust: " Why did the Tut's body was buried along with gilded treasure ?  ",
+      ans: ' Tut was buried with gilded treasures because in his time, the "royals were wealthy". They believed in "rebirth" and thought that the "departed soul could use the things after life". ',
     },
     {
       qustno: "Q5",
-      qust: "    The way in which the sparrows expressed their sorrow when the author's grandmother died . ",
-      ans: "  When the author's grandmother died, thousand of sparrows sat scattered on the floor.That day there was no chirrupings . They did not take notice of bread bits which were thrown to them. When her corpse was carried off They flew amay ",
+      qust: " Why did the king change his name from Tutankhaten to Tutankhamun?",
+      ans: 'King Tut changed his name to Tutankhamun "because he promoted the worship of a major God, Amun". His name "represented  The Living Image of Amun".',
     },
     {
       qustno: "Q6",
-      qust: "     How did the author' grandfather look like ? ",
-      ans: "  His grandfather wore a big turban and loose fitting clothes .He had big white beard that cowered the best part of his Chest. He losked as if the was hundred years old and had lots and lots of grandchild . ",
+      qust: 'What were the deeds that led Ray Johnson to describe Akhenaten as "wacky"?',
+      ans: 'Akhenaten was described as "wacky" because he "promoted the worship of Atten" and "moved his religious capital from Thebes to Amarna". He "shocked the country by attacking on major Gods Amun". He also "smashed his images and closed his temples"',
     },
     {
       qustno: "Q7",
-      qust: "  How did the qrandmother look like ? ",
-      ans: "  His grandmother was short fat and slightly bent . Her face had a criss-cross of wrinkled . Her silver locks scattered on her pale face . Her lips constantly moved in inaudible prayer . She Hobbled the house resting one hand on her waist and other telling the beads of her roasary ",
+      qust: "What were the results of the CT scan?",
+      ans: "The results of the CT scan appeared clearly. 1.King Tut's head appeared as 0.62 mm. 2.The neck vertebrae, hands, and rib cage were visible. 3.The transection of skull and head shaped as scattering pixels . ",
     },
     {
       qustno: "Q8",
-      qust: "   The three phase of the author's relationchip with his grandmother before he left the country to study .  ",
-      ans: "  when the author went to abroad for study he thought  that his granny would be upset  all sentimental but that was not so .she did not show any emotion. She went to leave him station . She kissed him but she had till no time to talk. ",
+      qust: " ist the advances in technology that have improved forensic analysis.  ",
+      ans: 'The advanced technology has improved forensic analysis because it has "created three-dimensional images of the mummy". Hundreds of "X-ray were done in cross-section".',
+    },
+    {
+      qustno: "Q9",
+      qust: ' Explain the statement, "King Tut is one of the first mummies to be scanned-in death, as in life..." .  ',
+      ans: 'King Tut is one of the first mummies to be scanned, "in death, as in life, moving really ahead of his countrymen". His mummy was "scanned for the first time in the history". As a king, he was "cheating his people".',
+    },
+  ];
+
+  const shortans = [
+    {
+      qustno: "Q1",
+      qust: " Who was King Tut ?",
+      ans: " King Tut was the last heir of his family. He ruled Egypt for 'over nine years ' ." ,
     },
      {
-      qustno: "Q9",
-      qust: "    How did grandmother help the author in his Childhood ?  ",
-      ans: " She would wake him up get him ready for school the bathed him and dressed him while reciting prayer. She would plaster his wodder slate with yellow chalks. She tied his state Inkpot and red pen in a bundle . she would go school with him .  ",
+      qustno: "Q2",
+      qust: " When was Tut's tomb discovered and by whom ?",
+      ans: "King Tut's tomb was discovered in 1992 by Howard Carter" ,
+    },
+     {
+      qustno: "Q3",
+      qust: " What is the Egyptian mummy project ?",
+      ans: 'The project started in 2003. It has "recorded 600 mummies so far and is still counting".',
+    },
+     {
+      qustno: "Q4",
+      qust: " Who invested the King Tut's tomb after Howard Carter ?",
+      ans: "Zahi Hamass investigated the King Tut's tomb after Howard Carter." ,
+    },
+     {
+      qustno: "Q5",
+      qust: " Why did Howard Carter find it difficult to remove the coffin ?",
+      ans: "It was difficult to remove the coffin because the 'ritual resins had hardened the mummy' ." ,
+    },
+     {
+      qustno: "Q6",
+      qust: "Which things were buried along with Tut ?",
+      ans: "The 'gold treasure, seasonal fruits and flowers, artifacts, daily use things were buried along with Tut' ." ,
     },
   ];
   return (
@@ -62,7 +95,7 @@ export default function Chapterthree() {
         >
           {/* Heading */}
           <h1 className="text-3xl md:text-4xl font-bold text-blue-600 text-center mb-6">
-            Chapter 3: Discovering :  Tut & The Saga Continues
+            Chapter 3: Discovering : Tut & The Saga Continues
           </h1>
           {/* question ansewr */}
           <div>
@@ -71,6 +104,30 @@ export default function Chapterthree() {
             </p>
             {/* questoin answer */}
             {qustans.map((v, i) => {
+              return (
+                <div className="mt-4">
+                  <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+                    {v.qustno} {v.qust}
+                  </p>
+                  <motion.ul
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.8 }}
+                    className="list-disc pl-6 space-y-2 text-gray-700 text-base md:text-lg"
+                  >
+                    {v.ans}
+                  </motion.ul>
+                </div>
+              );
+            })}
+          </div>
+          {/* short and important question ansewr */}
+          <div>
+            <p className="text-gray-700 mt-2 font-bold text-base md:text-lg leading-relaxed mb-4">
+              Short answer
+            </p>
+            {/* questoin answer */}
+            {shortans.map((v, i) => {
               return (
                 <div className="mt-4">
                   <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
