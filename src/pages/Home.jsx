@@ -1,152 +1,150 @@
 "use client";
-// import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Homemenu() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      {/* Navbar */}
-
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 via-white to-slate-100">
       {/* Hero Section */}
-      <section className="pt-24 pb-16 text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Welcome to StudyNotes 📚
-        </h1>
-        <p className="text-lg md:text-xl mb-6">
-          Your one-stop destination for notes, subjects & exam preparation.
-        </p>
-        <Link
-          href="/notes"
-          className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+      <section className="relative flex flex-col items-center justify-center text-center pt-32 pb-28 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white overflow-hidden">
+        {/* Decorative Blobs */}
+        <div className="absolute -top-10 -left-10 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+        <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg"
         >
-          Explore Notes
-        </Link>
+          Welcome to <span className="text-yellow-300">StudyNotes</span> 📚
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="text-lg md:text-2xl mb-10 font-light max-w-2xl"
+        >
+          Your one-stop destination for{" "}
+          <span className="font-semibold text-yellow-200">
+            notes, subjects & exam prep
+          </span>
+          .
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+        >
+          <Link
+            href="/notes"
+            className="bg-yellow-300 text-gray-900 px-8 py-4 rounded-full font-bold shadow-lg hover:bg-yellow-400 transition transform hover:scale-105"
+          >
+            🚀 Explore Notes
+          </Link>
+        </motion.div>
       </section>
 
       {/* Subjects Section */}
-      <section className="py-16 max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Subjects
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {/* Maths */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-2">Maths</h3>
-            <p className="text-gray-600 mb-4">Explore Maths notes & guides.</p>
-            <Link
-              href="/subjects/maths"
-              className="text-blue-600 font-medium hover:underline"
+      <section className="py-20 max-w-7xl mx-auto px-6">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-4xl font-extrabold text-center mb-14 text-gray-800"
+        >
+          📖 Subjects
+        </motion.h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          {[
+            { name: "Maths", link: "/subjects/maths" },
+            { name: "Science", link: "/subjects/science" },
+            { name: "Accounts", link: "/subjects/accounts" },
+            { name: "Economics", link: "/subjects/economics" },
+            { name: "English", link: "/english" },
+            { name: "Computer", link: "/computer" },
+          ].map((subject, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.15, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-xl p-8 text-center border border-gray-200 hover:shadow-2xl transition transform hover:-translate-y-2"
             >
-              View Notes →
-            </Link>
-          </div>
-
-          {/* Science */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-2">Science</h3>
-            <p className="text-gray-600 mb-4">
-              Explore Science notes & guides.
-            </p>
-            <Link
-              href="/subjects/science"
-              className="text-blue-600 font-medium hover:underline"
-            >
-              View Notes →
-            </Link>
-          </div>
-
-          {/* Accounts */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-2">Accounts</h3>
-            <p className="text-gray-600 mb-4">
-              Explore Accounts notes & guides.
-            </p>
-            <Link
-              href="/subjects/accounts"
-              className="text-blue-600 font-medium hover:underline"
-            >
-              View Notes →
-            </Link>
-          </div>
-
-          {/* Economics */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-2">Economics</h3>
-            <p className="text-gray-600 mb-4">
-              Explore Economics notes & guides.
-            </p>
-            <Link
-              href="/subjects/economics"
-              className="text-blue-600 font-medium hover:underline"
-            >
-              View Notes →
-            </Link>
-          </div>
-
-          {/* English */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-2">English</h3>
-            <p className="text-gray-600 mb-4">
-              Explore English notes & guides.
-            </p>
-            <Link
-              href="/english"
-              className="text-blue-600 font-medium hover:underline"
-            >
-              View Notes →
-            </Link>
-          </div>
-
-          {/* Computer */}
-          <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-2">Computer</h3>
-            <p className="text-gray-600 mb-4">
-              Explore Computer notes & guides.
-            </p>
-            <Link
-              href="/computer"
-              className="text-blue-600 font-medium hover:underline"
-            >
-              View Notes →
-            </Link>
-          </div>
+              <h3 className="text-2xl font-bold mb-3 text-indigo-600">
+                {subject.name}
+              </h3>
+              <p className="text-gray-500 mb-6">
+                Explore {subject.name} notes & guides.
+              </p>
+              <Link
+                href={subject.link}
+                className="inline-block text-indigo-600 font-semibold hover:underline"
+              >
+                View Notes →
+              </Link>
+            </motion.div>
+          ))}
         </div>
       </section>
 
       {/* Notes Preview Section */}
-      <section className="py-16 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-10">Latest Notes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((note) => (
-              <div
+      <section className="py-20 bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-4xl font-extrabold text-center mb-14 text-gray-800"
+          >
+            ✨ Latest Notes
+          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {[1, 2, 3].map((note, idx) => (
+              <motion.div
                 key={note}
-                className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: idx * 0.2, duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2 border border-gray-200"
               >
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-2xl font-semibold mb-3 text-indigo-600">
                   Chapter {note} Notes
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   Summary & important questions for Chapter {note}.
                 </p>
                 <Link
                   href={`/notes/chapter-${note}`}
-                  className="text-blue-600 font-medium hover:underline"
+                  className="inline-block text-indigo-600 font-semibold hover:underline"
                 >
                   Read More →
                 </Link>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-white shadow-inner py-6 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 text-center text-gray-600">
-          © {new Date().getFullYear()} StudyNotes. All rights reserved.
+      <motion.footer
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-indigo-600 text-white py-10 mt-auto"
+      >
+        <div className="max-w-7xl mx-auto px-6 text-center text-sm md:text-base">
+          © {new Date().getFullYear()}{" "}
+          <span className="font-bold">StudyNotes</span>. All rights reserved.
         </div>
-      </footer>
+      </motion.footer>
     </div>
   );
 }

@@ -42,7 +42,7 @@ export default function ComputeHome() {
                   <td className="px-6 py-4">Computer Science</td>
                   <td className="px-6 py-4">
                     <a
-                      href="/notes/class12/dbms"
+                      href="/computer/class-12th/chapters"
                       className="text-blue-600 font-medium hover:underline transition duration-300 hover:text-blue-800"
                     >
                       View Notes →
@@ -74,7 +74,7 @@ export default function ComputeHome() {
               <h3 className="font-semibold text-lg">Class 12 - DBMS</h3>
               <p className="text-gray-600">Subject: Computer Science</p>
               <a
-                href="/notes/class12/dbms"
+                href="/computer/class-12th/chapters"
                 className="text-blue-600 font-medium hover:underline"
               >
                 View Notes →
