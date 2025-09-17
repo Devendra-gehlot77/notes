@@ -20,52 +20,34 @@ export default function Englishchapter() {
                 {
                   cls: "11th",
                   chapter: "Chapter 1 - The Portrait of a lady ",
-                  link: "/english/chapters/ch-one",
+                  link: "/english/chapters/class-11th/ch-one",
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 2 - We're Nof afraid to die... If we can all be Together ",
-                  link: "/english/chapters/ch-two",
+                  chapter:
+                    "Chapter 2 - We're Nof afraid to die... If we can all be Together ",
+                  link: "/english/chapters/class-11th/ch-two",
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 3 - Discovering :  Tut & The Saga Continues ",
-                  link: "/english/chapters/ch-three",
+                  chapter:
+                    "Chapter 3 - Discovering :  Tut & The Saga Continues ",
+                  link: "/english/chapters/class-11th/ch-three",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 4 - The Ailing Planet",
-                  link: "/english/chapters/ch-four",
+                  link: "/english/chapters/class-11th/ch-four",
                 },
                 {
                   cls: "11th",
                   chapter: "Chapter 5 - The Adventure",
-                  link: "/english/chapters/ch-five",
+                  link: "/english/chapters/class-11th/ch-five",
                 },
                 {
                   cls: "11th",
-                  chapter: "Chapter 6 - FLow of Control",
-                  link: "/english/chapters/ch-six",
-                },
-                {
-                  cls: "11th",
-                  chapter: "Chapter 7 - Funcitons",
-                  link: "/english/chapters/ch-seven",
-                },
-                {
-                  cls: "11th",
-                  chapter: "Chapter 8 - String",
-                  link: "/english/chapters/ch-eight",
-                },
-                {
-                  cls: "11th",
-                  chapter: "Chapter 9 - List  ",
-                  link: "/english/chapters/ch-nine",
-                },
-                {
-                  cls: "11th",
-                  chapter: "Chapter 10 - Tuple and Dictionary",
-                  link: "/english/chapters/ch-ten",
+                  chapter: "Chapter 6 - Silk Route",
+                  link: "/english/chapters/class-11th/ch-six",
                 },
               ].map((row, i) => (
                 <tr
@@ -73,7 +55,7 @@ export default function Englishchapter() {
                   className="hover:bg-blue-50 transition duration-300 ease-in-out transform hover:scale-[1.01]"
                 >
                   <td className="px-6 py-4 font-medium">{row.cls}</td>
-                  <td className="px-6 py-4">english Science</td>
+                  <td className="px-6 py-4">english</td>
                   <td className="px-6 py-4">{row.chapter}</td>
                   <td className="px-6 py-4">
                     <a
@@ -88,6 +70,73 @@ export default function Englishchapter() {
             </tbody>
           </table>
         </div>
+        {/* desktop table poem section */}
+        <h1 className="text-3xl md:text-4xl font-bold text-blue-600 text-center mb-6"> poem </h1>
+        <div className="hidden md:block overflow-x-auto shadow-lg rounded-lg animate-fadeIn">
+          <table className="w-full text-left border border-gray-200 rounded-lg">
+            <thead className="bg-blue-600 text-white">
+              <tr>
+                <th className="px-6 py-3">Class</th>
+                <th className="px-6 py-3">Subject</th>
+                <th className="px-6 py-3">Chapter</th>
+                <th className="px-6 py-3">Link</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {[
+                {
+                  cls: "11th",
+                  chapter: "Chapter 1 - A Photograph ",
+                  link: "/english/poem/class-11th/poem-one",
+                },
+                {
+                  cls: "11th",
+                  chapter:
+                    "Chapter 2 - The Labronum Top",
+                  link: "/english/poem/class-11th/poem-two",
+                },
+                {
+                  cls: "11th",
+                  chapter:
+                    "Chapter 3 - Discovering :  Tut & The Saga Continues ",
+                  link: "/english/poem/class-11th/poem-three",
+                },
+                {
+                  cls: "11th",
+                  chapter: "Chapter 4 - The Ailing Planet",
+                  link: "/english/poem/class-11th/poem-four",
+                },
+                {
+                  cls: "11th",
+                  chapter: "Chapter 5 - The Adventure",
+                  link: "/english/poem/class-11th/poem-five",
+                },
+                {
+                  cls: "11th",
+                  chapter: "Chapter 6 - Silk Route",
+                  link: "/english/poem/class-11th/poem-six",
+                },
+              ].map((row, i) => (
+                <tr
+                  key={i}
+                  className="hover:bg-blue-50 transition duration-300 ease-in-out transform hover:scale-[1.01]"
+                >
+                  <td className="px-6 py-4 font-medium">{row.cls}</td>
+                  <td className="px-6 py-4">english</td>
+                  <td className="px-6 py-4">{row.chapter}</td>
+                  <td className="px-6 py-4">
+                    <a
+                      href={row.link}
+                      className="text-blue-600 font-medium hover:underline transition hover:text-blue-800"
+                    >
+                      View Notes →
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>  
 
         {/* ✅ Mobile Cards */}
         <div className="grid grid-cols-1 gap-4 md:hidden mt-6 animate-slideUp">
@@ -95,52 +144,32 @@ export default function Englishchapter() {
             {
               cls: "11th",
               chapter: "Chapter 1 - english System",
-              link: "/english/chapters/ch-one",
+              link: "/english/chapters/class-11th/class-11th/ch-one",
             },
             {
               cls: "11th",
               chapter: "Chapter 2 - Encoding Schemes and Number System",
-              link: "/english/chapters/ch-two",
+              link: "/english/chapters/class-11th/ch-two",
             },
             {
               cls: "11th",
               chapter: "Chapter 3 - Data Representation",
-              link: "/english/chapters/ch-three",
+              link: "/english/chapters/class-11th/ch-three",
             },
             {
               cls: "11th",
               chapter: "Chapter 4 - Introdcution to problem solving",
-              link: "/english/chapters/ch-four",
+              link: "/english/chapters/class-11th/ch-four",
             },
             {
               cls: "11th",
               chapter: "Chapter 5 - Functions in Python",
-              link: "/english/chapters/ch-five",
+              link: "/english/chapters/class-11th/ch-five",
             },
             {
               cls: "11th",
               chapter: "Chapter 6 - FLow of Control",
-              link: "/english/chapters/ch-six",
-            },
-            {
-              cls: "12th",
-              chapter: "Chapter 7 - Funtions",
-              link: "/english/chapters/ch-seven",
-            },
-            {
-              cls: "12th",
-              chapter: "Chapter 8 -String",
-              link: "/english/chapters/ch-eight",
-            },
-            {
-              cls: "12th",
-              chapter: "Chapter 9 - List",
-              link: "/english/chapters/ch-nine",
-            },
-            {
-              cls: "12th",
-              chapter: "Chapter 10 - Tuple and Dictionary ",
-              link: "/english/chapters/ch-ten",
+              link: "/english/chapters/class-11th/ch-six",
             },
           ].map((row, i) => (
             <div

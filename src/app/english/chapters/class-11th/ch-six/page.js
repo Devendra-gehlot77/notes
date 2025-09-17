@@ -1,6 +1,7 @@
 "use client";
 
-import Chaptersix from "@/pages/computer/Chaptersix";
+
+import Chaptersix from "@/pages/english/Chaptersix";
 
 
 

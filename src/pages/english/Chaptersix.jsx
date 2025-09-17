@@ -16,33 +16,38 @@ export default function Chaptersix() {
     },
     {
       qustno: "Q3",
-      qust: "The author's experience at Hor was in stark contrast to earlier accounts of the place .",
-      ans: "There is a lack of determinism in Quantum Theory. If we fire a bullet from a source in a definite direction and at a given speed, it will go in a definite direction. But if we fire an electron in a definite direction and a given speed from a source, it won't be in a definite direction. It may be here, there and anywhere. This is called lack of determinism in Quantum Theory.",
+      qust: "The author's experience at Hor was in stark contract to earlier accounts of the place  .",
+      ans: " The author's experience at Hor was in stark contrast because he had read several accounts about the security of the place and its water . But the author did not notice any kind of sancity there . There were only hears of riddle and refuge . ",
     },
     {
       qustno: "Q4",
-      qust: '"You neither travelled to the past nor the future. You were in the present experiencing a different world." Explain.',
-      ans: "Gangadharpant was thinking about the battle of Panipat. Actually, the Battle of Panipat was fought between the Maratha and Abdali troops in 1761. The Marathas were defeated in the battle. But the professor thought that the Marathas won the battle. Thus, he thought of the past and collision with the truck made him unconscious.",
+      qust: "The author was disappointed with Darchen ?",
+      ans: " The author was disappointed with Darchen because he caught a cold. He was gasping for oxygen .  His physical condition was not good . He noticed that the town was full of rubbish , dust of ice rocks and other stuff . There was not any sancity there .",
     },
     {
       qustno: "Q5",
-      qust: '"You need some interaction to cause a transition." Explain.',
-      ans: "We need some interaction to cause a transition because transition goes from high energy to low energy. As an electron springs from high to low energy it makes transition.",
+      qust: "The author thaught that his positive thinking strategy worked well after all . ",
+      ans: " The author's positive thinking strategy worked well after all. He was thinking about a companion for his journey and he met Norbu there. He wanted to complete his pilgrimage. ",
     },
     {
       qustno: "Q6",
-      qust: "Describe the railway station of Victoria Terminus.",
-      ans: "The station looked remarkably neat and clean. The staff was mostly made up of Anglo-Indians and Parsees, along with a handful of British officers.",
+      qust: "The purpore of the author journey to mount kailash . ",
+      ans: "The author's purpose for the journey to Mount Kailash was to complete his pilgrimage. Mount Kailash is considered a holy place in Hindu cosmology. His purpose was also to write about the journey and adventure",
     },
     {
       qustno: "Q7",
-      qust: "Why does professor Gangadharpant decide to go to library?",
-      ans: "The professor goes to the Asiatic Library to get the facts of history and the battle of Panipat. He wanted to spend his time there. As a historian, he goes there.",
+      qust: " The author's physical condition in Darchen .",
+      ans: " The autor caught cold at darchen . One os is nostrils was blocked . When he lay down to sleep . He woke up abruptly . He was gasping for oxygen and his chest was heavy. His physical condition was not good at all .  ",
     },
     {
       qustno: "Q8",
-      qust: "What happened with the professor when he goes to Azad Maidan?",
-      ans: "The professor had no experience of addressing people. He wanted to deliver a speech there for the battle of Panipat. But the audience were not ready to listen to him. They showered upon him tomatoes, eggs, and other objects. They ejected him from the platform.",
+      qust: "The authar meeting with norku .",
+      ans: "The author's meeting with Norbu was a turning point. The author was waiting for someone and he met Norbu there, who was also a pilgrim and was writing papers about Mount Kailash.",
+    },
+    {
+      qustno: "Q9",
+      qust: "Tsetan's  support to the auother during the journey .  ",
+      ans: "Tsetan was a car driver and an expert in driving on rocky and ice-layered roads. When the author caught a cold, Tsetan took him to a medical college. He was very helpful and generous.",
     },
   ];
   return (

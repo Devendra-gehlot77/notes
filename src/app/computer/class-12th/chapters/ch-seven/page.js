@@ -4,6 +4,8 @@ import ChapterSeven from "@/pages/computer/ChapterSeven";
 
 
 
+
+
 // computer notes chapters
 export default function page() {
   return (
