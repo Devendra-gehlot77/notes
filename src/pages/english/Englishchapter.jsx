@@ -144,7 +144,7 @@ export default function Englishchapter() {
             {
               cls: "11th",
               chapter: "Chapter 1 - english System",
-              link: "/english/chapters/class-11th/class-11th/ch-one",
+              link: "/english/chapters/class-11th/ch-one",
             },
             {
               cls: "11th",
