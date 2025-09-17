@@ -1,6 +1,7 @@
 "use client";
 
-import Chapterthree from "@/pages/english/Chapterthree";
+
+import Poemthird from "@/pages/english/poem/Poemthird";
 
 
 
@@ -11,7 +12,7 @@ export default function page() {
   return (
     <>
       <div className="mt-25">
-        <Chapterthree/>
+        <Poemthird/>
       </div>
     </>
   );

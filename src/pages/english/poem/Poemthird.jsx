@@ -26,6 +26,43 @@ export default function Poemthird() {
     },
   ];
 
+  const stranza = [
+     {
+      qustno: "Q1",
+      qust: "Who is 'I' in the first line?",
+      ans: "'I' refers to the voice of the rain.",
+    },
+    {
+      qustno: "Q2",
+      qust: "From where does the rain rise?",
+      ans: "The rain rises from the bottomless sea and the land.",
+    },
+    {
+      qustno: "Q3",
+      qust: "What happens to the water vapour when it rises upward?",
+      ans: "When water vapour rises upward, it is formed into clouds and then comes down on the land as a shower of rain.",
+    },
+    {
+      qustno: "Q4",
+      qust: "Which word means the same: uncertain, indefinite or unclear?",
+      ans: 'The word is "vaguely".',
+    },
+    {
+      qustno: "Q5",
+      qust: "Why does the rain descend on the earth?",
+      ans: "The rain descends on the earth to wash drought and dust layers.",
+    },
+    {
+      qustno: "Q6",
+      qust: "Without rain what will happen to the seeds?",
+      ans: "Without rain, the seeds will be hidden and unsprouted.",
+    },
+    {
+      qustno: "Q7",
+      qust: "How does the rain give back life to its own origin?",
+      ans: "The rain showers give life back to their own origin. It works by day and night.",
+    },
+  ]
   return (
     <>
       <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-10">
@@ -47,6 +84,36 @@ export default function Poemthird() {
             </p>
             {/* loop */}
             {qustans.map((v, i) => {
+              return (
+                <div key={i} className="mt-4">
+                  <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">
+                    {v.qustno} {v.qust}
+                  </p>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.8 }}
+                    className="pl-6 space-y-2 text-gray-700 text-base md:text-lg mt-1"
+                  >
+                    <span className="text-gray-700 font-bold text-base md:text-lg leading-relaxed me-1">
+                      Ans:
+                    </span>
+                    {v.ans}
+                  </motion.div>
+                </div>
+              );
+            })}
+          </div>
+          {/* Stranza  */}
+          <div>
+            <p className="text-gray-700 mt-2 font-bold text-base md:text-lg leading-relaxed mb-4">
+            Stranza
+            </p>
+            <p className="text-gray-700 mt-2 font-bold text-base md:text-lg leading-relaxed mb-4">
+            External I rise _ _ _ _ _ _ _ _ _ _ _ _ _ yet the same .
+            </p>
+            {/* loop */}
+            {stranza.map((v, i) => {
               return (
                 <div key={i} className="mt-4">
                   <p className="text-gray-700 font-bold text-base md:text-lg leading-relaxed">

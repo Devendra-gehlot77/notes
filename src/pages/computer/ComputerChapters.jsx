@@ -123,17 +123,17 @@ export default function ComputerChapters() {
               link: "/computer/chapters/ch-six",
             },
             {
-              cls: "12th",
+              cls: "11th",
               chapter: "Chapter 7 - Funtions",
               link: "/computer/chapters/ch-seven",
             },
             {
-              cls: "12th",
+              cls: "11th",
               chapter: "Chapter 8 -String",
               link: "/computer/chapters/ch-eight",
             },
             {
-              cls: "12th",
+              cls: "11th",
               chapter: "Chapter 9 - List",
               link: "/computer/chapters/ch-nine",
             },

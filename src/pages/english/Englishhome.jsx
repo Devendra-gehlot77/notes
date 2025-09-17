@@ -65,7 +65,7 @@ export default function Englishhome() {
               </h3>
               <p className="text-gray-600">Subject: English</p>
               <Link 
-               href="/english/chapter"
+               href="/english/chapters"
                 className="text-blue-600 font-medium hover:underline"
               >
                 View Notes →
