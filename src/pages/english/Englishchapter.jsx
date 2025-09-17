@@ -142,35 +142,37 @@ export default function Englishchapter() {
         <div className="grid grid-cols-1 gap-4 md:hidden mt-6 animate-slideUp">
           {[
             {
-              cls: "11th",
-              chapter: "Chapter 1 - english System",
-              link: "/english/chapters/class-11th/ch-one",
-            },
-            {
-              cls: "11th",
-              chapter: "Chapter 2 - Encoding Schemes and Number System",
-              link: "/english/chapters/class-11th/ch-two",
-            },
-            {
-              cls: "11th",
-              chapter: "Chapter 3 - Data Representation",
-              link: "/english/chapters/class-11th/ch-three",
-            },
-            {
-              cls: "11th",
-              chapter: "Chapter 4 - Introdcution to problem solving",
-              link: "/english/chapters/class-11th/ch-four",
-            },
-            {
-              cls: "11th",
-              chapter: "Chapter 5 - Functions in Python",
-              link: "/english/chapters/class-11th/ch-five",
-            },
-            {
-              cls: "11th",
-              chapter: "Chapter 6 - FLow of Control",
-              link: "/english/chapters/class-11th/ch-six",
-            },
+                  cls: "11th",
+                  chapter: "Chapter 1 - The Portrait of a lady ",
+                  link: "/english/chapters/class-11th/ch-one",
+                },
+                {
+                  cls: "11th",
+                  chapter:
+                    "Chapter 2 - We're Nof afraid to die... If we can all be Together ",
+                  link: "/english/chapters/class-11th/ch-two",
+                },
+                {
+                  cls: "11th",
+                  chapter:
+                    "Chapter 3 - Discovering :  Tut & The Saga Continues ",
+                  link: "/english/chapters/class-11th/ch-three",
+                },
+                {
+                  cls: "11th",
+                  chapter: "Chapter 4 - The Ailing Planet",
+                  link: "/english/chapters/class-11th/ch-four",
+                },
+                {
+                  cls: "11th",
+                  chapter: "Chapter 5 - The Adventure",
+                  link: "/english/chapters/class-11th/ch-five",
+                },
+                {
+                  cls: "11th",
+                  chapter: "Chapter 6 - Silk Route",
+                  link: "/english/chapters/class-11th/ch-six",
+                },
           ].map((row, i) => (
             <div
               key={i}
