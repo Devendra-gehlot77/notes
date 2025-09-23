@@ -1,13 +1,13 @@
 "use client";
 
-import Chapterfour from "@/pages/computer/Chapterfour";
+import Chapterfour12th from "@/pages/class12thComputer/Chapterfour12th";
 
 // computer notes chapters
 export default function page() {
   return (
     <>
       <div className="mt-25">
-        <Chapterfour />
+        <Chapterfour12th/>
       </div>
     </>
   );

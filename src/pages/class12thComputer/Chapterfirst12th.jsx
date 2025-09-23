@@ -57,7 +57,7 @@ export default function Chapterfirst12th() {
         >
           {/* Heading */}
           <h1 className="text-3xl md:text-4xl font-bold text-blue-600 text-center mb-6">
-            Chapter 5: The Adventure
+            Chapter 5: Stack
           </h1>
           {/* question ansewr */}
           <div>

@@ -29,22 +29,22 @@ export default function ComputerChapters12th() {
                 },
                 {
                   cls: "12th",
-                  chapter: "Chapter 3 - Data Representation",
+                  chapter: "Chapter 3 - Stack",
                   link: "/computer/class-12th/chapters/ch-three",
                 },
                 {
                   cls: "12th",
-                  chapter: "Chapter 4 - Introdcution to problem solving ",
+                  chapter: "Chapter 4 - Queue",
                   link: "/computer/class-12th/chapters/ch-four",
                 },
                 {
                   cls: "12th",
-                  chapter: "Chapter 5 - Functions in Python",
+                  chapter: "Chapter 5 - Sorting ",
                   link: "/computer/class-12th/chapters/ch-five",
                 },
                 {
                   cls: "12th",
-                  chapter: "Chapter 6 - FLow of Control",
+                  chapter: "Chapter 6 - Searching ",
                   link: "/computer/class-12th/chapters/ch-six",
                 },
                 {
